@@ -1,0 +1,59 @@
+:root {
+  --fp-primary: #86502e;
+  --fp-primary-dark: #593720;
+  --fp-secondary: #bd713b;
+  --fp-gold: #c79743;
+  --fp-yellow: #e2b75d;
+  --fp-cream: #fbf6ed;
+  --fp-canvas: #f8f2e8;
+  --fp-surface: #fffdf9;
+  --fp-surface-muted: #f4eadc;
+  --fp-ink: #38291e;
+  --fp-muted: #847565;
+  --fp-muted-light: #a19484;
+  --fp-border: #e7dac8;
+  --fp-border-strong: #d5c1a6;
+  --fp-primary-soft: #f2e6d6;
+  --fp-accent-soft: #f8edda;
+  --fp-accent-border: #dfc494;
+  --fp-success: #527752;
+  --fp-danger: #ae5142;
+  --fp-button: var(--fp-primary);
+  --fp-button-hover: var(--fp-primary-dark);
+  --fp-card-shadow: 0 12px 32px rgba(76, 48, 26, .08);
+  --fp-space-1: 4px;
+  --fp-space-2: 8px;
+  --fp-space-3: 12px;
+  --fp-space-4: 16px;
+  --fp-space-6: 24px;
+  --fp-space-8: 32px;
+  --fp-radius-sm: 7px;
+  --fp-radius-md: 12px;
+  --fp-radius-lg: 18px;
+  --fp-radius-pill: 999px;
+  --fp-font-sans: "Segoe UI", Tahoma, Arial, sans-serif;
+  --fp-font-display: "Palatino Linotype", "Book Antiqua", Georgia, Tahoma, serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fp-font-sans);
+  background: var(--fp-canvas);
+  color: var(--fp-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, textarea, select { font-family: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid var(--fp-accent-border); outline-offset: 2px; }
+
+.route-state { min-height: 100vh; box-sizing: border-box; display: grid; place-content: center; justify-items: center; gap: 12px; padding: 24px; background: var(--fp-canvas); color: var(--fp-ink); text-align: center; }
+.route-state-mark { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 18px 18px 50% 50%; background: var(--fp-primary); color: #fff8ec; font-family: var(--fp-font-display); font-size: 25px; font-weight: 800; }
+.route-state h1 { margin: 8px 0 0; font-family: var(--fp-font-display); font-size: clamp(22px, 5vw, 34px); }
+.route-state p { max-width: 480px; margin: 0; color: var(--fp-muted); line-height: 1.7; }
+.route-state a { margin-top: 8px; padding: 11px 17px; border-radius: var(--fp-radius-sm); background: var(--fp-primary); color: white; font-weight: 700; text-decoration: none; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

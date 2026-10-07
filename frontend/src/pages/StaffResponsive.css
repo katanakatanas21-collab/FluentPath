@@ -1,0 +1,31 @@
+/* Widths on the role shells include their responsive padding. */
+.staff-sidebar,
+.staff-main { box-sizing: border-box; }
+
+@media (max-width: 1000px) {
+  .staff-sidebar { width: 210px; }
+  .staff-main { padding-inline: 25px; }
+  .staff-stats { grid-template-columns: repeat(2, 1fr); }
+  .staff-grid { grid-template-columns: 1fr; }
+  .staff-catalog-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .staff-shell { display: block; }
+  .staff-sidebar { width: 100%; min-height: auto; padding: 14px 16px; border-inline-end: 0; border-bottom: 1px solid var(--staff-line); }
+  .staff-brand { padding: 0 4px 14px; }
+  .staff-nav-label { display: none; }
+  .staff-sidebar .staff-footer { display: flex; align-items: center; justify-content: flex-start; gap: 8px; margin-top: 8px; padding: 0; }
+  .staff-sidebar .staff-footer > a, .staff-sidebar .staff-footer > .staff-logout { display: none; }
+  .staff-sidebar .staff-footer > button:not(.staff-logout) { display: inline-flex; width: auto; padding: 7px 10px; }
+  .staff-nav { display: flex; gap: 4px; overflow-x: auto; }
+  .staff-nav a { min-width: max-content; flex: 0 0 auto; justify-content: center; padding: 0 9px; }
+  .staff-nav a:not(.active) { display: flex; }
+  .staff-main { padding: 25px 16px; }
+  .staff-header { display: block; }
+  .staff-account { margin-top: 17px; }
+  .staff-hero { min-height: 125px; padding: 22px; }
+  .staff-hero-badge { width: 58px; height: 58px; margin-inline-end: 0; font-size: 20px; }
+  .staff-panel { padding: 16px; }
+  .staff-catalog-grid { grid-template-columns: 1fr; }
+}

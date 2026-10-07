@@ -1,0 +1,51 @@
+# Direct runtime dependencies, pinned to the exact versions proven in this
+# project. Exact pins rather than ranges: a deployment must resolve to the same
+# artifacts the test suite passed against. Transitive dependencies are pinned as
+# well, because an unpinned transitive package is the usual way a "reproducible"
+# build quietly stops being reproducible.
+#
+# Regenerate after an intentional upgrade:
+#   venv\Scripts\python.exe -m pip install --upgrade <package>
+#   venv\Scripts\python.exe -m pip list --format=freeze
+# and update this file from that output.
+
+# Web framework and ASGI server. The container starts uvicorn directly.
+fastapi==0.141.1
+starlette==1.7.0
+uvicorn==0.53.0
+click==8.5.0
+h11==0.16.0
+
+# Request and response validation.
+pydantic==2.13.5
+pydantic_core==2.46.5
+annotated-doc==0.0.5
+annotated-types==0.8.0
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+
+# Access tokens, for login and the bearer dependency.
+PyJWT==2.15.0
+
+# AI teacher. Imported lazily inside ai_teacher, so the application starts
+# without OpenAI being reachable.
+openai==3.19.2
+httpx2==2.13.1
+httpcore2==2.13.1
+jiter==0.17.0
+truststore==0.10.4
+
+# PostgreSQL persistence.
+SQLAlchemy==2.1.1
+greenlet==3.5.6
+asyncpg==0.31.0
+
+# Schema migrations. Applied by an operator, not by the web process.
+alembic==1.20.0
+Mako==1.4.3
+MarkupSafe==3.0.3
+
+# Event loop plumbing shared by starlette, httpx2 and SQLAlchemy.
+anyio==4.15.1
+idna==3.20
+sniffio==1.3.1

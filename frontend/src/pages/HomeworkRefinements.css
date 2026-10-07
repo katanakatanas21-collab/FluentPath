@@ -1,0 +1,4 @@
+.homework-feedback-panel { padding: 16px 0 0; border-top: 1px solid #eef1f5; border-radius: 0; background: transparent; }
+.submission-panel:has(> .submission-panel) { padding: 0; border: 0; background: transparent; }
+.submission-panel:has(> .submission-panel) > h2 { margin-bottom: 14px; }
+.submission-panel > .submission-panel { margin-bottom: 0; }

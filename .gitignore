@@ -1,0 +1,38 @@
+# Secrets and machine-specific environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local runtimes and generated output
+.venv/
+**/venv/
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+frontend/build/
+frontend/coverage/
+
+# Temporary local QA artifacts and runtime logs
+.qa-*
+backend/.qa-temp/
+backend/.qa-disposable/
+backend/backend-runtime*.log
+frontend/frontend-runtime*.log
+responsive-results-final.json
+
+# Staging verification artifacts
+.staging-*
+
+# Local development tools
+.qodo/
+.vscode/
+
+# Local application data - may contain user data
+backend/data/*.json
+
+backend/.env.example

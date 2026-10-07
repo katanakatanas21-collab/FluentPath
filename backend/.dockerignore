@@ -1,0 +1,38 @@
+# Build context for the backend image.
+#
+# Everything excluded here is either a secret, real user data, or a local
+# artifact that must never end up inside a deployment image. The result is that
+# the Dockerfile COPY lines describe the whole runtime surface.
+
+# Secrets. Only the example file is ever allowed to exist in an image.
+.env
+.env.*
+!.env.example
+
+# Real product data. Production runs on PostgreSQL, and the JSON files are the
+# development store; the process creates the directory it needs at startup.
+data/
+
+# Local interpreter and installed packages. The image installs its own from
+# requirements.txt.
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Tests. The image serves traffic; it does not run the suite.
+test_*.py
+
+# Local QA scratch space and runtime logs.
+.qa-*
+*.log
+
+# Version control and editor state.
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Deployment definition itself.
+Dockerfile
+.dockerignore

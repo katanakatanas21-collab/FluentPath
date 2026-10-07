@@ -1,0 +1,34 @@
+.student-lesson-shell { --lesson-ink: #4a2d1c; --lesson-muted: #8e7860; --lesson-line: #ead9c1; --lesson-accent: #a85d27; background: #fbf6ed; color: var(--lesson-ink); font-family: Georgia, "Noto Naskh Arabic", serif; }
+.student-lesson-main { width: min(100%, 1120px); }
+.student-lesson-back { display: inline-flex; margin-bottom: 19px; color: #9d5726; font: 700 13px "Segoe UI", sans-serif; text-decoration: none; }
+.student-lesson-hero { position: relative; display: grid; grid-template-columns: 118px minmax(0, 1fr) auto; align-items: center; gap: 22px; overflow: hidden; padding: 25px 29px; border: 1px solid #e4ceb0; border-radius: 24px; background: linear-gradient(118deg, #fff9ee, #f0dfc1); box-shadow: 0 15px 40px #5833130c; }
+.student-lesson-hero::after { position: absolute; inset-inline-end: 12%; bottom: -95px; width: 185px; height: 185px; border: 1px solid #dfc298; border-radius: 100px 100px 0 0; content: ""; opacity: .45; pointer-events: none; }
+.student-lesson-arch { position: relative; z-index: 1; display: grid; place-items: center; width: 100px; height: 120px; border-radius: 54px 54px 16px 16px; color: #fff3dd; background: linear-gradient(155deg, #813c20, #c88032); box-shadow: inset 0 0 0 6px #ffffff24, 0 8px 18px #71371224; font: 700 30px Georgia, serif; }
+.student-lesson-hero > div:nth-child(2) { position: relative; z-index: 1; }
+.student-lesson-hero p { margin: 0 0 8px; color: #a26930; font: 800 10px "Segoe UI", sans-serif; letter-spacing: 1.3px; }
+.student-lesson-hero h1 { margin: 0; color: #462a18; font-size: clamp(27px, 4vw, 42px); }
+.student-lesson-hero > div:nth-child(2) > span { display: block; margin-top: 7px; color: #8b755f; font: 13px "Segoe UI", sans-serif; }
+.student-lesson-time { position: relative; z-index: 1; align-self: start; padding: 9px 12px; border: 1px solid #ddc299; border-radius: 999px; color: #8a4d24; background: #fffaf1; font: 700 11px "Segoe UI", sans-serif; white-space: nowrap; }
+.student-lesson-progress { display: flex; align-items: center; gap: 13px; margin: 17px 2px 21px; color: #a6662c; font: 700 12px "Segoe UI", sans-serif; }
+.student-lesson-progress > div { flex: 1; height: 7px; overflow: hidden; border-radius: 9px; background: #eee2d0; }
+.student-lesson-progress i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #c37a2e, #e0b653); transition: width .3s ease; }
+.student-lesson-progress small { color: #927a61; }
+.student-lesson-content { overflow: hidden; border: 1px solid #eadbc6; border-radius: 21px; background: #fffdf9; box-shadow: 0 12px 28px #6438120b; }
+.student-lesson-intro { padding: 25px 30px; color: #fff7e9; background: linear-gradient(115deg, #71402b, #93592d 62%, #ad7134); }
+.student-lesson-intro span { color: #f2d09c; font: 800 10px "Segoe UI", sans-serif; letter-spacing: 1.3px; }
+.student-lesson-intro h2 { max-width: 750px; margin: 10px 0 0; font-size: 21px; line-height: 1.55; }
+.student-lesson-section { display: grid; grid-template-columns: 45px 1fr; gap: 14px; padding: 22px 30px; border-top: 1px solid #f0e7dc; }
+.student-lesson-section:first-of-type { border-top: 0; }
+.student-lesson-section > span { display: grid; place-items: center; width: 35px; height: 43px; border-radius: 20px 20px 8px 8px; color: #9a5629; background: #f5ead8; font: 700 12px "Segoe UI", sans-serif; }
+.student-lesson-section h2 { margin: 2px 0 8px; color: #53351f; font-size: 18px; }
+.student-lesson-section p { margin: 0; color: #725e4c; font: 15px/1.85 "Segoe UI", "Noto Naskh Arabic", sans-serif; white-space: pre-wrap; }
+.student-lesson-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; padding: 16px 18px; border: 1px solid #eadbc6; border-radius: 16px; background: #fffdf9; }
+.student-lesson-actions a { color: #8b4b22; font: 700 12px "Segoe UI", sans-serif; text-decoration: none; }
+.student-lesson-actions button { min-height: 43px; padding: 0 20px; border: 0; border-radius: 12px; color: #fff7eb; background: linear-gradient(115deg, #884522, #bd792f); box-shadow: 0 7px 15px #743a1e25; cursor: pointer; font: 700 13px "Segoe UI", sans-serif; }
+.student-lesson-actions button:disabled { opacity: .6; cursor: wait; }
+.student-lesson-xp { color: #a56825; font: 700 12px "Segoe UI", sans-serif; }
+.student-lesson-done { padding: 10px 14px; border-radius: 10px; color: #55713f; background: #eaf1df; font: 700 12px "Segoe UI", sans-serif; }
+.student-lesson-error { color: #93452f; font: 13px "Segoe UI", sans-serif; }
+.student-lesson-state { min-height: 100vh; display: grid; align-content: center; justify-items: center; padding: 25px; color: #694a30; background: #fbf6ed; font: 16px "Segoe UI", sans-serif; text-align: center; }
+.student-lesson-state button { padding: 11px 16px; border: 0; border-radius: 10px; color: #fff5e8; background: #9b5c28; cursor: pointer; }
+@media (max-width: 760px) { .student-lesson-main { padding: 22px 14px; }.student-lesson-hero { grid-template-columns: 73px 1fr; gap: 13px; padding: 17px; border-radius: 18px; }.student-lesson-arch { width: 68px; height: 85px; border-radius: 38px 38px 12px 12px; font-size: 22px; }.student-lesson-time { grid-column: 1 / -1; justify-self: start; }.student-lesson-intro { padding: 20px; }.student-lesson-intro h2 { font-size: 18px; }.student-lesson-section { grid-template-columns: 34px 1fr; gap: 10px; padding: 18px 15px; }.student-lesson-section > span { width: 30px; height: 37px; }.student-lesson-section p { font-size: 14px; }.student-lesson-actions { justify-content: center; }.student-lesson-actions > * { flex: 1 1 38%; text-align: center; }.student-lesson-actions button { flex-basis: 100%; } }

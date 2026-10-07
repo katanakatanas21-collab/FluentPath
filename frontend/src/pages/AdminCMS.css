@@ -1,0 +1,69 @@
+.cms-shell { --staff-ink: #3b2a1d; --staff-muted: #8a7560; --staff-line: #e9d9c3; --staff-blue: #9b5c28; background: #f8f2e8; color: #392719; font-family: "Georgia", "Noto Naskh Arabic", serif; }
+.cms-shell .staff-sidebar { background: #f5ecdc; border-color: #e7d4b8; }
+.cms-shell .staff-brand > span { border-radius: 50% 50% 13px 13px; color: #fff5e8; background: linear-gradient(145deg, #9a4d24, #c88a39); }
+.cms-shell .staff-nav a { color: #82654d; }
+.cms-shell .staff-nav a:hover, .cms-shell .staff-nav a.active { color: #7d3c1d; background: #efe0c7; }
+.cms-shell .staff-nav-label { color: #aa8f70; }
+.cms-shell .notification-bell { color: #8b481f; border-color: #e1c9a8; background: #fff9ef; }
+.cms-shell .notification-bell-wrap { margin-inline: 8px; }
+.cms-shell .staff-notifications-link { margin-inline: 8px; margin-bottom: 15px; color: #8b481f; }
+.cms-main { width: min(100%, 1320px); padding-top: 32px; }
+.cms-heading { display: flex; align-items: center; gap: 18px; margin-bottom: 30px; padding: 22px 26px; border: 1px solid #e5d2b6; border-radius: 22px; background: linear-gradient(120deg, #fffaf0 0%, #f2e3ca 100%); box-shadow: 0 14px 34px #6b3b1710; }
+.cms-arch-mark { position: relative; display: grid; place-items: center; width: 64px; height: 72px; flex: 0 0 64px; border-radius: 34px 34px 12px 12px; background: linear-gradient(160deg, #8f4425, #c57e32); color: #fff5e7; font-family: Georgia, serif; font-size: 32px; box-shadow: inset 0 0 0 5px #ffffff20; }
+.cms-heading p, .cms-kicker, .cms-toolbar > div > span { margin: 0 0 7px; color: #a56d2e; font-family: "Segoe UI", sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 1.5px; }
+.cms-heading h1 { margin: 0; color: #4c2c1b; font-size: clamp(25px, 3vw, 36px); }
+.cms-heading > div:nth-child(2) > span { display: block; margin-top: 7px; color: #8f7861; font-family: "Segoe UI", sans-serif; font-size: 13px; }
+.cms-heading > button { margin-inline-start: auto; padding: 10px 14px; border: 1px solid #d7b98e; border-radius: 12px; color: #75401f; background: #fff9ef; cursor: pointer; }
+.cms-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin: 24px 0 17px; }
+.cms-toolbar h2 { margin: 0; color: #4d301d; font-size: 22px; }
+.cms-primary, .cms-detail-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 42px; padding: 0 17px; border: 1px solid #8b481f; border-radius: 12px; color: #fff8ee; background: linear-gradient(120deg, #8b481f, #b87329); box-shadow: 0 7px 18px #793e201f; cursor: pointer; font: 700 13px "Segoe UI", sans-serif; text-decoration: none; }
+.cms-primary:disabled { opacity: .6; cursor: wait; }
+.cms-course-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.cms-course-card { position: relative; min-width: 0; overflow: hidden; padding: 18px; border: 1px solid #e9d9c3; border-radius: 19px; background: #fffdf8; box-shadow: 0 9px 24px #6335140c; }
+.cms-course-card::before { position: absolute; top: -53px; inset-inline-end: -40px; width: 130px; height: 130px; border: 1px solid #ebd7b6; border-radius: 70px 70px 0 0; content: ""; opacity: .75; }
+.cms-card-arch { display: inline-grid; place-items: center; width: 54px; height: 62px; margin-bottom: 14px; border-radius: 29px 29px 10px 10px; color: #fff3df; background: linear-gradient(150deg, #984c24, #ce913a); font: 700 14px "Segoe UI", sans-serif; }
+.cms-course-card-top { display: flex; align-items: center; justify-content: space-between; gap: 9px; color: #aa742f; font: 700 10px "Segoe UI", sans-serif; text-transform: uppercase; }
+.cms-course-card h3 { margin: 10px 0 7px; color: #472d1c; font-size: 20px; }
+.cms-course-card p { min-height: 43px; margin: 0 0 12px; color: #8d7862; font: 13px/1.6 "Segoe UI", sans-serif; }
+.cms-course-card > small { color: #a48c72; font: 11px "Segoe UI", sans-serif; }
+.cms-active, .cms-inactive, .cms-publish-pill { display: inline-flex; align-items: center; width: max-content; padding: 5px 9px; border-radius: 999px; font: 700 10px "Segoe UI", sans-serif; }
+.cms-active, .cms-publish-pill.is-published { color: #496332; background: #e7efda; }
+.cms-inactive, .cms-publish-pill.is-draft { color: #956528; background: #fbefd9; }
+.cms-card-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px; padding-top: 13px; border-top: 1px solid #f0e6d8; }
+.cms-card-actions a, .cms-card-actions button, .cms-detail-actions button, .cms-lesson-row > a, .cms-lesson-row > button { border: 0; color: #8a481f; background: transparent; cursor: pointer; font: 700 12px "Segoe UI", sans-serif; text-decoration: none; }
+.cms-card-actions a { color: #a45a25; }
+.cms-back { display: inline-flex; margin-bottom: 17px; color: #8c4b22; font: 700 13px "Segoe UI", sans-serif; text-decoration: none; }
+.cms-editor-card { width: min(100%, 840px); margin: 0 auto; padding: 26px; border: 1px solid #e8d5b8; border-radius: 20px; background: #fffdf8; box-shadow: 0 12px 35px #6335140c; }
+.cms-editor-card h2 { margin: 0 0 20px; color: #4a2d1b; font-size: 24px; }
+.cms-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+.cms-form label { display: grid; gap: 7px; color: #795a3e; font: 700 12px "Segoe UI", sans-serif; }
+.cms-form label:nth-child(3), .cms-form label:nth-child(4), .cms-content-field, .cms-draft-note, .cms-form > button { grid-column: 1 / -1; }
+.cms-form input, .cms-form select, .cms-form textarea { width: 100%; box-sizing: border-box; padding: 12px 13px; border: 1px solid #e0cfb6; border-radius: 11px; outline-color: #be8139; color: #493220; background: #fffaf2; font: 14px/1.5 "Segoe UI", sans-serif; }
+.cms-form textarea { min-height: 100px; resize: vertical; }
+.cms-lesson-editor { width: min(100%, 920px); }
+.cms-content-field textarea { min-height: 120px; }
+.cms-draft-note { margin: 0; padding: 11px 13px; border-radius: 10px; color: #80572e; background: #fcf1dc; font: 12px/1.5 "Segoe UI", sans-serif; }
+.cms-course-detail { display: grid; grid-template-columns: 125px 1fr auto; align-items: center; gap: 23px; margin: 10px 0 20px; padding: 22px; border: 1px solid #e5d1b2; border-radius: 20px; background: linear-gradient(115deg, #fffaf0, #f2e2c8); }
+.cms-detail-medallion { display: grid; place-items: center; width: 112px; height: 126px; border-radius: 58px 58px 18px 18px; color: #fff5e8; background: linear-gradient(150deg, #853d21, #cb8b36); text-align: center; font: 700 15px "Segoe UI", sans-serif; box-shadow: inset 0 0 0 6px #ffffff22; }
+.cms-detail-copy > span:first-child { color: #a36a2e; font: 800 10px "Segoe UI", sans-serif; letter-spacing: 1.2px; }
+.cms-detail-copy h2 { margin: 8px 0; color: #442a1a; font-size: 25px; }
+.cms-detail-copy p { color: #88725c; font: 13px/1.6 "Segoe UI", sans-serif; }
+.cms-detail-actions { display: grid; gap: 10px; justify-items: stretch; }
+.cms-detail-actions button { padding: 11px 12px; border: 1px solid #d7b991; border-radius: 11px; }
+.cms-lessons-panel { padding: 22px; border: 1px solid #eadcc8; border-radius: 19px; background: #fffdf8; }
+.cms-lesson-row { display: grid; grid-template-columns: 42px 40px minmax(120px, 1fr) auto auto auto auto; align-items: center; gap: 13px; padding: 14px 4px; border-top: 1px solid #f0e7da; }
+.cms-order-buttons { display: grid; gap: 4px; }
+.cms-order-buttons button { width: 28px; height: 25px; border: 1px solid #e7d7c1; border-radius: 7px; color: #885027; background: #fff8ed; cursor: pointer; }
+.cms-order-buttons button:disabled { opacity: .4; cursor: default; }
+.cms-lesson-number { display: grid; place-items: center; width: 36px; height: 42px; border-radius: 20px 20px 8px 8px; color: #8c4a23; background: #f3e6d0; font: 700 13px "Segoe UI", sans-serif; }
+.cms-lesson-copy { min-width: 0; }
+.cms-lesson-copy h3 { margin: 0; color: #4c321f; font-size: 15px; }
+.cms-lesson-copy p { overflow: hidden; margin: 4px 0; color: #927e68; font: 12px "Segoe UI", sans-serif; text-overflow: ellipsis; white-space: nowrap; }
+.cms-lesson-copy small { color: #a38c71; font: 10px "Segoe UI", sans-serif; }
+.cms-archived-row { opacity: .65; }
+.cms-archive-action { color: #a54534 !important; }
+.cms-empty { padding: 32px; border: 1px dashed #dfcba9; border-radius: 14px; color: #927c63; text-align: center; font: 14px "Segoe UI", sans-serif; }
+.cms-error { margin: 0 0 17px; padding: 12px 15px; border-radius: 11px; color: #883d2a; background: #fce8dd; font: 13px "Segoe UI", sans-serif; }
+.admin-content-link { display: inline-flex; min-height: 42px; align-items: center; padding: 0 16px; border-radius: 10px; color: #fff9ed; background: linear-gradient(120deg, #914a22, #bf7f32); text-decoration: none; font: 700 12px "Segoe UI", sans-serif; }
+@media (max-width: 1000px) { .cms-course-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cms-lesson-row { grid-template-columns: 36px 36px minmax(100px, 1fr) auto auto; }.cms-lesson-row > a, .cms-lesson-row > button { padding: 4px; } }
+@media (max-width: 700px) { .cms-main { padding: 20px 14px 32px; }.cms-heading { gap: 12px; padding: 16px; }.cms-arch-mark { width: 48px; height: 58px; flex-basis: 48px; font-size: 26px; }.cms-heading > button { padding: 8px; font-size: 11px; }.cms-course-grid { grid-template-columns: 1fr; }.cms-toolbar { align-items: flex-start; }.cms-editor-card, .cms-lessons-panel { padding: 16px; }.cms-form { grid-template-columns: 1fr; }.cms-form label, .cms-form label:nth-child(3), .cms-form label:nth-child(4), .cms-content-field, .cms-draft-note, .cms-form > button { grid-column: 1; }.cms-course-detail { grid-template-columns: 74px minmax(0, 1fr); gap: 14px; padding: 15px; }.cms-detail-medallion { width: 70px; height: 84px; border-radius: 40px 40px 12px 12px; font-size: 11px; }.cms-detail-copy h2 { font-size: 19px; }.cms-detail-actions { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; }.cms-lesson-row { grid-template-columns: 28px 32px minmax(0, 1fr) auto; gap: 8px; }.cms-publish-pill { display: none; }.cms-lesson-row > a, .cms-lesson-row > button { font-size: 10px; }.cms-lesson-copy p { max-width: 42vw; } }
