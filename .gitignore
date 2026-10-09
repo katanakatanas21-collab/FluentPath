@@ -36,3 +36,5 @@ responsive-results-final.json
 backend/data/*.json
 
 backend/.env.example
+
+opencode.json
